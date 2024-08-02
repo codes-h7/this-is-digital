@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    position: fixed;
+    z-index: 100;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter:blur(110px);
+    color: #000000;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.nav h1:hover {
+    /* transform: translate(-5% , 5%); */
+    transition: 0.1s ease-in-out;
+    scale: 0.9;
+    color: grey;
+}
+
+.nav .part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.nav .part2 a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #222;
+    margin: 20px;
+}
+
+.nav .part2 a:nth-last-child(1) {
+    padding: 5px 15px;
+    /* background-color: yellowgreen; */
+    border-radius: 50px;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.nav .part2 a:nth-last-child(1) .green {
+    width: 100%;
+    top: 0;
+    left: -100%;
+    z-index: -1;
+    position: absolute;
+    background-color: aqua;
+    height: 100%;
+    transition: left 0.4s;
+}
+
+.nav .part2 a:nth-last-child(1):hover .green {
+    left: 0;
+
+}
+
+.nav .part2 a:nth-last-child(1) h5 {
+    font-weight: 100;
+    position: relative;
+    z-index: 99;
+}
+
+.main>h1 {
+    font-size: 10.5vh;
+    font-weight: 100;
+    text-transform: capitalize;
+    width: 50%;
+    z-index: 97;
+    text-align: center;
+}
+
+.main h1::after {
+    content: "";
+    position: absolute;
+    bottom: 350px;
+    justify-content: center;
+    width: 22%;
+    left: 950px;
+    height: 16px;
+    transform: translate(-50%, 0);
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+}
+
+.main #img1 {
+    height: 800px;
+    width: 600px;
+    position: absolute;
+    left: 7%;
+    top: 20%;
+}
+
+.main #img2 {
+    height: 300px;
+    width: 290px;
+    position: absolute;
+    right: 29%;
+    top: 20%;
+
+}
+
+.main #img3 {
+    height: 300px;
+    width: 290px;
+    position: absolute;
+    right: 12%;
+    bottom: 10%;
+}
+
+.main .page1 {
+    width: 100%;
+    height: 70vh;
+    background-color: #222;
+
+}
+
+.part2 a {
+    transition: 0.4s ease-in-out;
+}
+
+.part2 a:hover {
+    border-bottom: 2px solid greenyellow;
+}
+
+.main img {
+    transition: margin 0.8s ease;
+}
+
+.main img:hover {
+    margin-top: -10px;
+}
+
+.main #img3 {
+    transition: margin 0.8s ease;
+}
+
+.main #img3:hover {
+    margin-bottom: 10px;
+}
+
+.page1 {
+    width: 100%;
+    height: 70vh;
+    background-color: #000000;
+    position: relative;
+    color: white;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.page1>h5 {
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.page1 h5::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: 680px;
+    top: 180px;
+    background-color: rgb(0, 252, 151);
+}
+
+.page1>h1 {
+    margin: 20px 0px;
+    width: 42%;
+    font-size: 48px;
+    font-weight: 100;
+    position: relative;
+}
+
+.page1 h1::after {
+    content: "";
+    position: absolute;
+    justify-content: center;
+    width: 200px;
+    left: 34%;
+    height: 60px;
+    /* transform: translate(-50%,0%); */
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    z-index: 9;
+    /* background-color: rgb(255, 255, 255); */
+}
+
+.about-us>h4 {
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.greenn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in;
+    height: 40px;
+    width: 80px;
+    border-radius: 50px;
+    border: 2px solid rgb(255, 248, 248);
+    margin-left: 20px;
+}
+
+.greenn>img {
+    height: 40px;
+    left: 0px;
+    padding: 0px 10px;
+}
+
+.greenn:hover {
+    background-color: aqua;
+    z-index: -33;
+    transition: 0.4s;
+    left: 0;
+}
+
+.page2 {
+    height: 100vh;
+    width: 99vw;
+}
+
+.page5-1 {
+    height: 40vh;
+    width: 95%;
+    gap: 10px;
+    display: flex;
+}
+
+.page2-imgg {
+    height: 100vh;
+    width: 50%;
+    column-gap: -100px;
+    display: flex;
+
+}
+
+.performer {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 40%;
+    height: 100vh;
+    row-gap: 10PX;
+}
+
+.performer>h1 {
+    font-weight: 500;
+    font-size: 3vw;
+    width: 30vw;
+}
+
+.performer h5 {
+    line-height: 30PX;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: .9vw;
+    width: 30vw;
+}
+
+.learn-more {
+    width: 30vw;
+    /* background-color: aqua; */
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.learn-more>img {
+    background-color: #DBEAFE;
+    border-radius: 50px;
+}
+
+.learn-more>h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1.2vw;
+}
+
+.learn-more>button {
+    width: 9.5vw;
+    height: 2vw;
+    border-radius: 20px;
+    border: 1px solid grey;
+    transition: 0.5s ease-in-out;
+}
+
+button:hover {
+    background-color: aqua;
+    transition: 0.5s ease-in-out;
+}
+.brands{height: 30vh;
+    text-align: center;
+    font-family: "Sequel" ;
+    font-size: 1.5vw;
+   width: 45vw;
+   margin: auto;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.brands-2{
+    padding-top: 60px;
+    display: flex;  
+    line-height: 110px;
+    height: 50vh;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    flex-direction: row;
+}
+.cards{
+    height: 80vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   margin: auto;
+    column-gap: 20px;
+    /* border: 10px solid blue; */
+}
+.card-heading{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+}
+.card-heading>img{
+    width: 8vw;
+}
+
+.card-1{
+    box-shadow: 10px -300px 100px  5px rgba(0, 0, 0, 0.696) inset;
+    width: 70vh;
+    height: 50vh;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/Golf.jpeg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1635867985&s=5e7cee6801a656523b56b64a34d04786);
+    background-size: cover;
+    background-position: center;
+}
+.seo{
+    width:100%;
+    height: 19.5vw;
+    display: flex;
+    flex-direction: column;
+  justify-content: end;
+    margin: auto;
+}
+.seo>h1{
+    margin-left: 35px;
+    margin-bottom: 50px;
+    font-weight: lighter;
+    color: white;
+    width: 90%;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+.card-heading-2{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+}
+.card-heading-2>img{
+    width: 8vw;
+}
+.card-2{
+    box-shadow: 10px -200px 100px 10px black inset;
+    width: 70vh;
+    height: 50vh;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/work-thumbnail-03.jpg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1627573623&s=efbebf8d2134c057c66886c970e18069);
+    background-size: cover;
+    background-position: center;
+}
+.seo1{
+     width:100%;
+    height: 19.5vw;
+    display: flex;
+    flex-direction: column;
+  justify-content: end;
+    margin: auto;
+}
+.seo1>h1{
+    margin-left: 35px;
+    margin-bottom: 50px;
+    font-weight: lighter;
+    color: white;
+    width: 90%;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+/*\end{code}*/
